@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- Navigation Bar -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- Portfolio Header -->
+  <header>
+    <h1 role="heading" aria-level="1">My Accessible Portfolio</h1>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Profile Image with alt text -->
+    <img src="profile.jpg" alt="Portrait of [Your Name]" role="img">
+
+    <!-- Brief Description -->
+    <section id="about">
+      <p>Hello! I'm [Your Name], a passionate web developer who creates accessible and user-friendly web applications. My work focuses on creating inclusive designs for all users.</p>
+    </section>
+
+    <!-- Project List -->
+    <section id="projects">
+      <h2 role="heading" aria-level="2">Featured Projects</h2>
+      <ul role="list">
+        <li role="listitem">Project 1: Accessible E-commerce Website</li>
+        <li role="listitem">Project 2: Responsive Portfolio Website</li>
+        <li role="listitem">Project 3: JavaScript Game Application</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
